@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <!-- Add Bootstrap CDN -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Your content will go here -->
+    <div class="container mt-5">
+      <h1 class="text-center">ToDo App</h1>
+
+      <form id="todoForm">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="taskInput"
+            placeholder="Add a new task"
+            required
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Add Task</button>
+          </div>
+        </div>
+      </form>
+
+      <ul id="taskList" class="list-group">
+        <!-- Tasks will be added dynamically here -->
+      </ul>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js (dependency for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Your JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
